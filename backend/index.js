@@ -1,7 +1,4 @@
-const express = require("express");
-const app = express();
-
-app.get("/", async (req, res) => {});
+const app = require("./app");
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
