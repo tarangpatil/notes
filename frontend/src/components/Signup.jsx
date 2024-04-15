@@ -3,8 +3,6 @@ import ThemeButton from "./ThemeButton";
 
 export default function Signup() {
   const [formData, setFormData] = useState({});
-  console.clear();
-  console.log(formData);
   function handleChange(e) {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -22,7 +20,7 @@ export default function Signup() {
           "Content-Type": "application/json",
         },
       });
-      const data = await response.text();
+      const data = response.redirected;
       console.log(data);
     } catch (error) {
       console.log(error);

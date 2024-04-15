@@ -13,7 +13,7 @@ export default function ThemeButton() {
   }, [theme]);
   return (
     <button
-      className="absolute bottom-8 right-8 dark:text-white md:text-3xl shadow md:shadow-lg shadow-gray-400 dark:shadow-black rounded-full p-4"
+      className="absolute bottom-20 md:bottom-8 right-8 dark:text-white md:text-3xl shadow md:shadow-lg shadow-gray-400 dark:shadow-black rounded-full p-4"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       {theme === "light" ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
