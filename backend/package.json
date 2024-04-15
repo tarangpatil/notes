@@ -13,6 +13,7 @@
   "author": "tarangpatil",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.1",
     "mysql2": "^3.9.4",
     "sequelize": "^6.37.2"
