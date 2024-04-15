@@ -9,7 +9,7 @@ app.get("/", async (req, res) => {
 });
 
 app.post("/user", async (req, res) => {
-  res.json(req.body);
+  res.redirect("/");
 });
 
 module.exports = app;
